@@ -9,7 +9,7 @@ const DashboardRightHeader = ({ title, member, gcp, subscriptionExpiry }) => {
       {/* Top Header Section */}
       <div className="flex justify-center items-center mb-4">
         <div
-          className={`h-16 w-[95%] z-50 bg-white shadow-xl rounded-md flex items-center px-8 ${
+          className={`h-16 w-[95%] z-10 bg-white shadow-xl rounded-md flex items-center px-8 ${
             i18n.language === "ar" ? "justify-end" : "justify-start"
           } border border-secondary`}
         >

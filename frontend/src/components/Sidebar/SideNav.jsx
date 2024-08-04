@@ -621,11 +621,11 @@ function SideNav({ isOpen, toggleSideNav }) {
 
   return (
     <>
-      <div className="bg-dashboard-color p-0">
+      <div className="bg-[#D0F2F3] p-0">
         <div className="body-content">
           <div className="relative lg:block navbar-menu">
             <nav
-              className={`fixed top-0 transition-all bg-dashboard-color lg:mt-0 mt-16 bottom-0 flex flex-col shadow bg-primary-sidebar overflow-hidden z-50 ${
+              className={`fixed top-0 transition-all bg-[#D0F2F3] lg:mt-0 mt-12 bottom-0 flex flex-col shadow bg-primary-sidebar overflow-hidden z-50 ${
                 isOpen ? "w-[300px]" : "w-0"
               } left-0`}
               id="sidenav"
