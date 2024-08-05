@@ -27,7 +27,7 @@ const DigitalLinks = () => {
       <div className="overflow-x-auto shadow-xl bg-white px-3 py-2">
         <table className="min-w-full mb-4">
           <thead>
-            <tr className="w-full bg-primary2">
+            <tr className="w-full bg-[#71BAEF]">
               <th className="py-1 px-4 text-white font-semibold">Product Name</th>
               <th className="py-1 px-4 text-white font-semibold">Brand Name</th>
               <th className="py-1 px-4 text-white font-semibold">Barcode</th>
@@ -84,7 +84,7 @@ const DigitalLinks = () => {
         </div>
 
         <div className="pt-0 min-h-screen">
-          <div className="bg-white p-3 shadow-md border-t-[20px] border-primary2 rounded-md">
+          <div className="bg-white p-3 shadow-md border-t-[20px] border-[#71BAEF] rounded-md">
            <div style={{ marginLeft: '-11px', marginRight: '-11px' }}>
 
             <DataTable data={data} title={activeTab} columnsName={InventorySuppliersDataColumn}
