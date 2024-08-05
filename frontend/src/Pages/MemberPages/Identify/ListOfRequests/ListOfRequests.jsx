@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import listrequst from '../../../../Images/listrequst.png';
+import { useNavigate } from 'react-router-dom';
 
 const ListOfRequests = () => {
   const [searchTerm, setSearchTerm] = useState('');
+  const navigate = useNavigate();
 
   // Sample data for requests
   const requests = Array.from({ length: 30 }, (_, index) => ({
@@ -41,7 +43,9 @@ const ListOfRequests = () => {
       {/* Grid of Requests */}
       <div className="grid 2xl:grid-cols-8 lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-6">
         {filteredRequests.map((request) => (
-          <div key={request.id} className="flex flex-col items-center border border-[#71BAEF] rounded-lg p-4 shadow-xl hover:shadow-md transition-shadow duration-200">
+          <div key={request.id}
+            onClick={() => navigate(`/member/product-details`)}
+            className="flex flex-col items-center border border-[#71BAEF] rounded-lg p-4 shadow-xl hover:shadow-md transition-shadow duration-200">
             <img src={listrequst} alt={request.name} className="w-36 h-36 mb-4 object-contain" />
             <p className="text-center font-normal font-sans text-secondary">{request.name}</p>
           </div>
