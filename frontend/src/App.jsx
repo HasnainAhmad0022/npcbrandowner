@@ -13,6 +13,7 @@ import Header from "./components/Header/Header.jsx";
 import HeaderLine from "./components/Header/HeaderLine.jsx";
 import NewFooter from "./components/Footer/NewFooter.jsx";
 import DigitalLinks from "./Pages/MemberPages/Capture/DigitalLinks/DigitalLinks.jsx";
+import ListOfRequests from "./Pages/MemberPages/Identify/ListOfRequests/ListOfRequests.jsx";
 
 const queryClient = new QueryClient();
 
@@ -87,6 +88,7 @@ const App = () => {
                         />
                         <Route path="gtin" element={<GTIN />} />
                         <Route path="digital-links" element={<DigitalLinks />} />
+                        <Route path="list-of-requests" element={<ListOfRequests />} />
 
                       </Routes>
                     </MainLayout>
