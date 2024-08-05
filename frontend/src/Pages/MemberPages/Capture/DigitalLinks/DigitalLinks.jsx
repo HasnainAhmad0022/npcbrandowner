@@ -84,7 +84,7 @@ const DigitalLinks = () => {
         </div>
 
         <div className="pt-0 min-h-screen">
-          <div className="bg-white p-3 shadow-md border-t-[20px] border-[#71BAEF] rounded-md">
+          <div className="bg-white p-3 shadow-md border-t-[20px] border-primary2 rounded-md">
            <div style={{ marginLeft: '-11px', marginRight: '-11px' }}>
 
             <DataTable data={data} title={activeTab} columnsName={InventorySuppliersDataColumn}
