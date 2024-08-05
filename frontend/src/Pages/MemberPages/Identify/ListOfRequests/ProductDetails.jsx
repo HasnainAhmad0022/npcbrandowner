@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import image1 from "../../../../Images/productsdetails/image1.png";
 import image2 from "../../../../Images/productsdetails/image2.png";
@@ -24,6 +24,12 @@ const ProductDetails = () => {
   const handleThumbnailClick = (index) => {
     setSelectedImageIndex(index);
   };
+
+
+  useEffect(() => {
+    // auto scroll to bottom
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [])
 
   return (
     <div>
