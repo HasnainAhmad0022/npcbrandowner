@@ -15,6 +15,7 @@ import NewFooter from "./components/Footer/NewFooter.jsx";
 import DigitalLinks from "./Pages/MemberPages/Capture/DigitalLinks/DigitalLinks.jsx";
 import ListOfRequests from "./Pages/MemberPages/Identify/ListOfRequests/ListOfRequests.jsx";
 import ProductDetails from "./Pages/MemberPages/Identify/ListOfRequests/ProductDetails.jsx";
+import MyProducts from "./Pages/MemberPages/Identify/MyProducts/MyProducts.jsx";
 
 const queryClient = new QueryClient();
 
@@ -91,6 +92,7 @@ const App = () => {
                         <Route path="digital-links" element={<DigitalLinks />} />
                         <Route path="list-of-requests" element={<ListOfRequests />} />
                         <Route path="product-details" element={<ProductDetails />} />
+                        <Route path="my-products" element={<MyProducts />} />
 
                       </Routes>
                     </MainLayout>
