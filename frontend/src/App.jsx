@@ -16,6 +16,8 @@ import DigitalLinks from "./Pages/MemberPages/Capture/DigitalLinks/DigitalLinks.
 import ListOfRequests from "./Pages/MemberPages/Identify/ListOfRequests/ListOfRequests.jsx";
 import ProductDetails from "./Pages/MemberPages/Identify/ListOfRequests/ProductDetails.jsx";
 import MyProducts from "./Pages/MemberPages/Identify/MyProducts/MyProducts.jsx";
+import ApiGuide from "./Pages/MemberPages/ApiGuide/ApiGuide.jsx";
+import ApiHelpDesk from "./Pages/MemberPages/ApiGuide/ApiHelpDesk.jsx";
 
 const queryClient = new QueryClient();
 
@@ -74,7 +76,6 @@ const App = () => {
                 <Route element={<UserLayout />}>
                   <Route path="/" element={<MemberLogin />} />
                   <Route path="/select-gln" element={<SelectGln />} />
-
                 </Route>
               </Routes>
               <Routes>
@@ -84,16 +85,23 @@ const App = () => {
                   element={
                     <MainLayout>
                       <Routes>
-                        <Route
-                          path="dashboard"
-                          element={<BrandDashboard />}
-                        />
+                        <Route path="dashboard" element={<BrandDashboard />} />
                         <Route path="gtin" element={<GTIN />} />
-                        <Route path="digital-links" element={<DigitalLinks />} />
-                        <Route path="list-of-requests" element={<ListOfRequests />} />
-                        <Route path="product-details" element={<ProductDetails />} />
+                        <Route
+                          path="digital-links"
+                          element={<DigitalLinks />}
+                        />
+                        <Route
+                          path="list-of-requests"
+                          element={<ListOfRequests />}
+                        />
+                        <Route
+                          path="product-details"
+                          element={<ProductDetails />}
+                        />
                         <Route path="my-products" element={<MyProducts />} />
-
+                        <Route path="ApiGuide" element={<ApiGuide />} />
+                        <Route path="api-helpdesk" element={<ApiHelpDesk />} />
                       </Routes>
                     </MainLayout>
                   }

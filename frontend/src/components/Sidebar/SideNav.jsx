@@ -601,7 +601,7 @@ import verifiedbyGS1 from "../../Images/verifiedbyGS1.png";
 import MyNPCservices from "../../Images/MyNPCservices.png";
 import governance from "../../Images/governance.png";
 import logout from "../../Images/logout.png";
-
+import ApiGuideicon from "../../Images/MyNPCservices.png";
 function SideNav({ isOpen, toggleSideNav }) {
   const [brandOwnerIdentify, setBrandOwnerIdentify] = useState(false);
   const [brandCapture, setBrandCapture] = useState(false);
@@ -894,6 +894,24 @@ function SideNav({ isOpen, toggleSideNav }) {
                         </div>
                       </Link>
                     </li>
+                      <li>
+                      <Link
+                        to="/member/ApiGuide"
+                        className="flex items-center px-3 py-0 text-gray-700 group hover:text-gray-600 hover:bg-gray-100 flex-row"
+                      >
+                        <span className="drop-shadow-lg flex h-14 w-16 items-center justify-center rounded-lg bg-D2D180 bg-center text-center xl:p-2.5 mr-2">
+                          <img
+                            src={ApiGuideicon}
+                            alt="logo"
+                            className="w-7 h-7 object-cover"
+                          />
+                        </span>
+                        <span className="font-sans font-medium text-base my-auto -ml-3">
+                          API Guide
+                        </span>
+                      </Link>
+                    </li>
+
                     <li>
                       <Link
                         className="flex items-center py-0 text-gray-700 rounded hover:bg-gray-100 pl-7 pr-7 justify-start"
