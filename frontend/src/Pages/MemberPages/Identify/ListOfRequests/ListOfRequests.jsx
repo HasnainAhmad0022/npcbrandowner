@@ -39,11 +39,14 @@ const ListOfRequests = () => {
       </div>
 
       {/* Grid of Requests */}
-      <div className="grid 2xl:grid-cols-8 lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-6">
+      <div className="grid 2xl:grid-cols-6 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-6">
         {filteredRequests.map((request) => (
           <div key={request.id} className="flex flex-col items-center border border-[#71BAEF] rounded-lg p-4 shadow-xl hover:shadow-md transition-shadow duration-200">
             <img src={listrequst} alt={request.name} className="w-36 h-36 mb-4 object-contain" />
             <p className="text-center font-normal font-sans text-secondary">{request.name}</p>
+             <button className="flex items-center justify-center bg-primary2 font-sans text-white sm:px-10 px-2 py-1 mt-2 rounded hover:bg-orange-700 focus:outline-none">
+                Approve
+              </button>
           </div>
         ))}
       </div>

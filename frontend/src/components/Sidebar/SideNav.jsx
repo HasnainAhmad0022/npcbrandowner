@@ -601,6 +601,7 @@ import verifiedbyGS1 from "../../Images/verifiedbyGS1.png";
 import MyNPCservices from "../../Images/MyNPCservices.png";
 import governance from "../../Images/governance.png";
 import logout from "../../Images/logout.png";
+import ApiGuideicon from "../../Images/MyNPCservices.png";
 
 function SideNav({ isOpen, toggleSideNav }) {
   const [brandOwnerIdentify, setBrandOwnerIdentify] = useState(false);
@@ -688,7 +689,7 @@ function SideNav({ isOpen, toggleSideNav }) {
                         <ul className="text-sm flex flex-col gap-3">
                           <li>
                             <Link
-                              to={'/member/list-of-requests'}
+                              to={"/member/list-of-requests"}
                               className="flex items-center py-2 text-gray-700 rounded hover:bg-gray-100 pl-3 pr-4 justify-start"
                             >
                               <div className="flex justify-center items-center gap-3 flex-row">
@@ -704,9 +705,7 @@ function SideNav({ isOpen, toggleSideNav }) {
                             </Link>
                           </li>
                           <li>
-                            <Link
-                              className="flex items-center py-2 text-gray-700 rounded hover:bg-gray-100 pl-3 pr-4 justify-start"
-                            >
+                            <Link className="flex items-center py-2 text-gray-700 rounded hover:bg-gray-100 pl-3 pr-4 justify-start">
                               <div className="flex justify-center items-center gap-3 flex-row">
                                 <img
                                   src={validation}
@@ -824,9 +823,7 @@ function SideNav({ isOpen, toggleSideNav }) {
                         <div className="transition border-gray-500 dropdown-section nested-menu pl-3 ml-3">
                           <ul className="text-sm flex flex-col gap-3">
                             <li>
-                              <Link
-                                className="flex items-center py-2 text-gray-700 rounded hover:bg-gray-100 pl-3 pr-4 justify-start"
-                              >
+                              <Link className="flex items-center py-2 text-gray-700 rounded hover:bg-gray-100 pl-3 pr-4 justify-start">
                                 <div className="flex justify-center items-center gap-3 flex-row">
                                   <img
                                     src={MySharedData}
@@ -840,9 +837,7 @@ function SideNav({ isOpen, toggleSideNav }) {
                               </Link>
                             </li>
                             <li>
-                              <Link
-                                className="flex items-center py-2 text-gray-700 rounded hover:bg-gray-100 pl-3 pr-4 justify-start"
-                              >
+                              <Link className="flex items-center py-2 text-gray-700 rounded hover:bg-gray-100 pl-3 pr-4 justify-start">
                                 <div className="flex justify-center items-center gap-3 flex-row">
                                   <img
                                     src={verifiedbyGS1}
@@ -879,8 +874,23 @@ function SideNav({ isOpen, toggleSideNav }) {
                     </li>
                     <li>
                       <Link
-                        className="flex items-center py-0 text-gray-700 rounded hover:bg-gray-100 pl-7 pr-7 justify-start"
+                        to="/member/ApiGuide"
+                        className="flex items-center px-3 py-0 text-gray-700 group hover:text-gray-600 hover:bg-gray-100 flex-row"
                       >
+                        <span className="drop-shadow-lg flex h-14 w-16 items-center justify-center rounded-lg bg-D2D180 bg-center text-center xl:p-2.5 mr-2">
+                          <img
+                            src={ApiGuideicon}
+                            alt="logo"
+                            className="w-7 h-7 object-cover"
+                          />
+                        </span>
+                        <span className="font-sans font-medium text-base my-auto -ml-3">
+                          API Guide
+                        </span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="flex items-center py-0 text-gray-700 rounded hover:bg-gray-100 pl-7 pr-7 justify-start">
                         <div className="flex justify-center items-center h-14 gap-3 flex-row">
                           <img
                             src={governance}
@@ -894,9 +904,7 @@ function SideNav({ isOpen, toggleSideNav }) {
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        className="flex items-center py-0 text-gray-700 rounded hover:bg-gray-100 pl-7 pr-7 justify-start"
-                      >
+                      <Link className="flex items-center py-0 text-gray-700 rounded hover:bg-gray-100 pl-7 pr-7 justify-start">
                         <div className="flex justify-center items-center h-14 gap-3 flex-row">
                           <img
                             src={validation}
