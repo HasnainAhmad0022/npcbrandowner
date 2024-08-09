@@ -14,8 +14,6 @@ import HeaderLine from "./components/Header/HeaderLine.jsx";
 import NewFooter from "./components/Footer/NewFooter.jsx";
 import DigitalLinks from "./Pages/MemberPages/Capture/DigitalLinks/DigitalLinks.jsx";
 import ListOfRequests from "./Pages/MemberPages/Identify/ListOfRequests/ListOfRequests.jsx";
-import ApiGuide from "./Pages/MemberPages/ApiGuide/ApiGuide.jsx";
-import ApiHelpDesk from "./Pages/MemberPages/ApiGuide/ApiHelpDesk.jsx";
 
 const queryClient = new QueryClient();
 
@@ -91,8 +89,6 @@ const App = () => {
                         <Route path="gtin" element={<GTIN />} />
                         <Route path="digital-links" element={<DigitalLinks />} />
                         <Route path="list-of-requests" element={<ListOfRequests />} />
-                         <Route path="ApiGuide" element={<ApiGuide />} />
-                         <Route path="api-helpdesk" element={<ApiHelpDesk />} />
 
                       </Routes>
                     </MainLayout>
