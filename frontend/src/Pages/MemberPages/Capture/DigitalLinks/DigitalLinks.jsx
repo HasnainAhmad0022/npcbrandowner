@@ -5,7 +5,7 @@ import { GtinColumn, InventorySuppliersDataColumn } from '../../../../utils/data
 const DigitalLinks = () => {
   const [activeTab, setActiveTab] = useState('Products Contents');
   const [data, setData] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
  
   const tabs = [
     { name: 'Products Contents', icon: 'ℹ️' },
@@ -28,12 +28,12 @@ const DigitalLinks = () => {
         <table className="min-w-full mb-4">
           <thead>
             <tr className="w-full bg-[#71BAEF]">
-              <th className="py-1 px-4 text-white font-semibold">Product Name</th>
-              <th className="py-1 px-4 text-white font-semibold">Brand Name</th>
-              <th className="py-1 px-4 text-white font-semibold">Barcode</th>
-              <th className="py-1 px-4 text-white font-semibold">Company</th>
-              <th className="py-1 px-4 text-white font-semibold">Licence Type</th>
-              <th className="py-1 px-4 text-white font-semibold">Action</th>
+              <th className="py-1 px-4 text-gray-700 font-semibold">Product Name</th>
+              <th className="py-1 px-4 text-gray-700 font-semibold">Brand Name</th>
+              <th className="py-1 px-4 text-gray-700 font-semibold">Barcode</th>
+              <th className="py-1 px-4 text-gray-700 font-semibold">Company</th>
+              <th className="py-1 px-4 text-gray-700 font-semibold">Licence Type</th>
+              <th className="py-1 px-4 text-gray-700 font-semibold">Action</th>
             </tr>
           </thead>
           <tbody>

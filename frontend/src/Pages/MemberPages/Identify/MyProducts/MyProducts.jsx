@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import listrequst from "../../../../Images/listrequst.png";
 import { useNavigate } from "react-router-dom";
-import ProductDetails from "./ProductDetails";
+import ProductDetails from "../ListOfRequests/ProductDetails";
 
-const ListOfRequests = () => {
+const MyProducts = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const navigate = useNavigate();
 
@@ -18,17 +18,17 @@ const ListOfRequests = () => {
     request.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  const [isMemberGpcPopUpVisible, setIsMemberGpcPopUpVisible] = useState(false);
+  const [isMyProductsPopUpVisible, setIsMyProductsPopUpVisible] = useState(false);
 
-  const handleMemberGpcPopUp = () => {
-    setIsMemberGpcPopUpVisible(true);
+  const handleMyProductsPopUp = () => {
+    setIsMyProductsPopUpVisible(true);
   };
 
   return (
     <div className="p-4 bg-gray-100 min-h-screen">
       <div className="bg-white p-6 shadow-md">
         <h2 className="text-xl font-sans font-semibold text-secondary mb-4">
-          List of Request
+          My Products
         </h2>
 
         {/* Search Bar */}
@@ -66,8 +66,8 @@ const ListOfRequests = () => {
             <div
               key={request.id}
               // onClick={() => navigate(`/member/product-details`)}
-              onClick={handleMemberGpcPopUp}
-              className="flex flex-col items-center border border-[#71BAEF] rounded-lg p-4 shadow-xl hover:shadow-md transition-shadow duration-200"
+              onClick={handleMyProductsPopUp}
+              className="flex flex-col items-center border border-[#71BAEF] rounded-lg p-4 shadow-xl hover:shadow-md hover:cursor-pointer transition-shadow duration-200"
             >
               <img
                 src={listrequst}
@@ -82,14 +82,14 @@ const ListOfRequests = () => {
         </div>
       </div>
 
-      {isMemberGpcPopUpVisible && (
+      {isMyProductsPopUpVisible && (
         <ProductDetails
-          isVisible={isMemberGpcPopUpVisible}
-          setVisibility={setIsMemberGpcPopUpVisible}
+          isVisible={isMyProductsPopUpVisible}
+          setVisibility={setIsMyProductsPopUpVisible}
         />
       )}
     </div>
   );
 };
 
-export default ListOfRequests;
+export default MyProducts;

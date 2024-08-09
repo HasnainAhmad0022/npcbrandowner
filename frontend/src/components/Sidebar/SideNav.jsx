@@ -688,6 +688,23 @@ function SideNav({ isOpen, toggleSideNav }) {
                         <ul className="text-sm flex flex-col gap-3">
                           <li>
                             <Link
+                              to={'/member/my-products'}
+                              className="flex items-center py-2 text-gray-700 rounded hover:bg-gray-100 pl-3 pr-4 justify-start"
+                            >
+                              <div className="flex justify-center items-center gap-3 flex-row">
+                                <img
+                                  src={ListofRequest}
+                                  alt="logo"
+                                  className="w-7 h-7 object-cover"
+                                />
+                                <span className="text-base font-sans font-medium truncate">
+                                  My Products
+                                </span>
+                              </div>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
                               to={'/member/list-of-requests'}
                               className="flex items-center py-2 text-gray-700 rounded hover:bg-gray-100 pl-3 pr-4 justify-start"
                             >
